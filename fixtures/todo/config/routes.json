@@ -1,7 +1,6 @@
 {
   "routes": [
     "get;/;TODO.Home",
-    "get;/home;TODO.Home",
     "post;/create;TODO.Create",
     "get;/delete/{id};TODO.Delete"
   ]
