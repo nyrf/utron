@@ -51,16 +51,16 @@ func (t *TODO) Delete() {
 	t.Ctx.Redirect("/", http.StatusFound)
 }
 
-func NewTODO() *TODO {
-	return &TODO{
-		Routes: []string{
-			"get;/;Home",
-			"post;/create;Create",
-			"get;/delete/{id};Delete",
-		},
-	}
-}
+// func NewTODO() *TODO {
+// 	return &TODO{
+// 		Routes: []string{
+// 			"get;/;Home",
+// 			"post;/create;Create",
+// 			"get;/delete/{id};Delete",
+// 		},
+// 	}
+// }
 
-func init() {
-	utron.RegisterController(NewTODO())
-}
+// func init() {
+// 	utron.RegisterController(NewTODO())
+// }
